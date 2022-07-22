@@ -6,3 +6,4 @@
 ## Demo
  Demo is availabe at (https://team-staking.netlify.app)
 
+# kamino-ui
