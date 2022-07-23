@@ -104,7 +104,7 @@ function Brawl(props) {
           <div className="flex flex-col">
             <div className="overflow-x-auto">
               <div className="p-1.5 w-full inline-block align-middle">
-                <div className="table-responsive border rounded-lg">
+                <div className="table-responsive border rounded-lg overflow-y-scroll h-[400px]">
                   <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-black">
                       <tr>

@@ -139,11 +139,14 @@ function App(props) {
           </Col>
         </Row>
       </Container>
-      <Container className="mb-5" >
+      <Container className="mb-5">
         <Row>
           <Col className="d-flex flex-column col-6">
             <h1 className="text-white">Past History</h1>
-            <Col className="bg-[#212121] text-center  border-2 rounded-xl border-black p-4 h-full" style={{overflow:'hidden'}}>
+            <Col
+              className="bg-[#212121] text-center  border-2 rounded-xl border-black p-4 h-full"
+              style={{ overflow: "hidden" }}
+            >
               <Table striped bordered hover variant="dark">
                 <thead>
                   <tr>
@@ -179,7 +182,10 @@ function App(props) {
               </Table>
             </Col>
           </Col>
-          <Col className="d-flex flex-column col-6" style={{overflow:'hidden'}}>
+          <Col
+            className="d-flex flex-column col-6"
+            style={{ overflow: "hidden" }}
+          >
             <h1 className="text-white">Clam Lootbox</h1>
             <Col className="bg-[#212121] text-center  border-2 rounded-xl border-black p-4 h-full">
               <p className="mt-4 text-left underline font-family">
@@ -238,284 +244,348 @@ function App(props) {
         <Row>
           <Col className="d-flex flex-column col-12 mb-[150px]">
             <h1 className="text-white">LEADERBOARD</h1>
-            <Col className="bg-[#212121] text-center  border-2 rounded-xl border-black p-4 h-full col-12">
-            <div className="mb-[200px]">
-          <h1 className="text-white">BOARD</h1>
-          <div className="flex flex-col">
-            <div className="overflow-x-auto">
-              <div className="p-1.5 w-full inline-block align-middle">
-                <div className="table-responsive border rounded-lg">
-                  <table className="min-w-full divide-y divide-gray-200">
-                    <thead className="bg-black">
-                      <tr>
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-bold text-left text-white uppercase font-family"
-                        >
-                          Medols
-                        </th>
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-bold text-left text-white uppercase font-family"
-                        >
-                          Wallet Adress
-                        </th>
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-bold text-left text-white uppercase font-family"
-                        >
-                          Rank
-                        </th>
-                        {/* <th
-                                        scope="col"
-                                        className="px-6 py-3 text-xs font-bold text-right text-white uppercase "
-                                    >
-                                        % NFT <br /> Staked
-                                    </th> */}
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-bold text-right text-white uppercase font-family"
-                        >
-                          $Shadow Staked
-                        </th>
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-bold text-right text-white uppercase font-family"
-                        >
-                          $Shadow Burned
-                        </th>
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-bold text-right text-white uppercase font-family"
-                        >
-                          Total Points
-                        </th>
-                        <th
-                          scope="col"
-                          className="px-6 py-3 text-xs font-bold text-right text-white uppercase font-family"
-                        >
-                          Total Bounus
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200">
-                      <tr className="bg-[#212121]">
-                        <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
-                          Ape Butts 1
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          4,543
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          94
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white">4500 K</a>
-                        </td>
+            <Col className="bg-[#212121] text-center  border-2 rounded-xl border-black p-4 col-12">
+              <div className="">
+                <h1 className="text-white">BOARD</h1>
+                <div className="flex flex-col">
+                  <div className="overflow-x-auto">
+                    <div className="p-1.5 w-full inline-block align-middle">
+                      <div className="table-responsive border rounded-lg overflow-y-scroll h-[600px]">
+                        <table className="min-w-full divide-y divide-gray-200">
+                          <thead className="bg-black">
+                            <tr>
+                              <th
+                                scope="col"
+                                className="px-6 py-3 text-xs font-bold text-left text-white uppercase font-family"
+                              >
+                                Medols
+                              </th>
+                              <th
+                                scope="col"
+                                className="px-6 py-3 text-xs font-bold text-left text-white uppercase font-family"
+                              >
+                                Wallet Adress
+                              </th>
+                              <th
+                                scope="col"
+                                className="px-6 py-3 text-xs font-bold text-left text-white uppercase font-family"
+                              >
+                                Rank
+                              </th>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
+                              <th
+                                scope="col"
+                                className="px-6 py-3 text-xs font-bold text-right text-white uppercase font-family"
+                              >
+                                $Shadow Staked
+                              </th>
+                              <th
+                                scope="col"
+                                className="px-6 py-3 text-xs font-bold text-right text-white uppercase font-family"
+                              >
+                                $Shadow Burned
+                              </th>
+                              <th
+                                scope="col"
+                                className="px-6 py-3 text-xs font-bold text-right text-white uppercase font-family"
+                              >
+                                Total Points
+                              </th>
+                              <th
+                                scope="col"
+                                className="px-6 py-3 text-xs font-bold text-right text-white uppercase font-family"
+                              >
+                                Total Bounus
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-gray-200 ">
+                            <tr className="bg-[#212121]">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">
-                            17
-                          </a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
 
-                        {/* <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                                        <a
-                                            className="text-green-500 hover:text-green-700"
-                                            href="#"
-                                        >
-                                            Edit
-                                        </a>
-                                    </td> */}
-                      </tr>
-                      <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
-                        <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
-                          Ape Butts 1
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          4,543
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          94
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white">4500 K</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                            </tr>
+                            <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white">17</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">17</a>
+                              </td>
+                            </tr>
+                            <tr className="bg-[#212121]">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
 
-                        {/* <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                                        <a
-                                            className="text-green-500 hover:text-green-700"
-                                            href="#"
-                                        >
-                                            Edit
-                                        </a>
-                                    </td> */}
-                      </tr>
-                      <tr className="bg-[#212121]">
-                        <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
-                          Ape Butts 1
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          4,543
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          94
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white">4500 K</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white " href="#">
+                                  17
+                                </a>
+                              </td>
+                            </tr>
+                            <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white " href="#">
-                            17
-                          </a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
 
-                        {/* <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                                        <a
-                                            className="text-green-500 hover:text-green-700"
-                                            href="#"
-                                        >
-                                            Edit
-                                        </a>
-                                    </td> */}
-                      </tr>
-                      <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
-                        <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
-                          Ape Butts 1
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          4,543
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          94
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white">4500 K</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">17</a>
+                              </td>
+                            </tr>
+                            <tr className="bg-[#212121]">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white">17</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white " href="#">
+                                  17
+                                </a>
+                              </td>
+                            </tr>
+                            <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
 
-                        {/* <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                                        <a
-                                            className="text-green-500 hover:text-green-700"
-                                            href="#"
-                                        >
-                                            Edit
-                                        </a>
-                                    </td> */}
-                      </tr>
-                      <tr className="bg-[#212121]">
-                        <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
-                          Ape Butts 1
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          4,543
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          94
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white">4500 K</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">17</a>
+                              </td>
+                            </tr>
+                            <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white " href="#">
-                            17
-                          </a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
 
-                        {/* <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                                        <a
-                                            className="text-green-500 hover:text-green-700"
-                                            href="#"
-                                        >
-                                            Edit
-                                        </a>
-                                    </td> */}
-                      </tr>
-                      <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
-                        <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
-                          Ape Butts 1
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          4,543
-                        </td>
-                        <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
-                          94
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white">4500 K</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">17</a>
+                              </td>
+                            </tr>
+                            <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white ">17</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
 
-                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
-                          <a className="text-white">17</a>
-                        </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">17</a>
+                              </td>
+                            </tr>
+                            <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
 
-                        {/* <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                                        <a
-                                            className="text-green-500 hover:text-green-700"
-                                            href="#"
-                                        >
-                                            Edit
-                                        </a>
-                                    </td> */}
-                      </tr>
-                    </tbody>
-                  </table>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">17</a>
+                              </td>
+                            </tr>
+                            <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
+
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">17</a>
+                              </td>
+                            </tr>
+                            <tr className="bg-gradient-to-r from-black via-[#212121] to-black">
+                              <td className="px-6 py-4 text-sm font-medium text-white whitespace-nowrap font-family">
+                                Ape Butts 1
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                4,543
+                              </td>
+                              <td className="px-6 py-4 text-sm text-white whitespace-nowrap font-family">
+                                94
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">4500 K</a>
+                              </td>
+
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white ">17</a>
+                              </td>
+
+                              <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap font-family">
+                                <a className="text-white">17</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
             </Col>
           </Col>
         </Row>
